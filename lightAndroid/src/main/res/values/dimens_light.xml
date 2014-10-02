@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Navigation drawer -->
+    <dimen name="drawer_item_simple_padding">10dp</dimen>
+    <dimen name="drawer_item_simple_padding_left">20dp</dimen>
+    <dimen name="drawer_item_simple_spacing">10dp</dimen>
+    <dimen name="drawer_item_category_padding">10dp</dimen>
+    <dimen name="drawer_item_category_underscore">2dp</dimen>
+    <dimen name="drawer_item_category_underscore_margin_sides">5dp</dimen>
+    <dimen name="drawer_item_category_underscore_margin_bottom">10dp</dimen>
+    <dimen name="drawer_item_category_underscore_margin_top">5dp</dimen>
+    <dimen name="drawer_item_profile_label_spacing">20dp</dimen>
+    <dimen name="drawer_item_profile_label_spacing_top">10dp</dimen>
+    <dimen name="drawer_item_profile_spacing">15dp</dimen>
+    <dimen name="drawer_item_simple_text">18sp</dimen>
+    <dimen name="drawer_item_simple_icon">20sp</dimen>
+    <dimen name="drawer_item_category_label">20sp</dimen>
+    <dimen name="drawer_item_profile_label">26sp</dimen>
+</resources>

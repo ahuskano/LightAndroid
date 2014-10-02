@@ -1,0 +1,44 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Super card toast -->
+    <dimen name="supercardtoast_container_padding">10dp</dimen>
+    <dimen name="supercardtoast_container_min_height">70dp</dimen>
+
+    <!-- Card frame -->
+    <dimen name="card_frame_margin_sides">20dp</dimen>
+    <dimen name="card_frame_padding_top">10dp</dimen>
+    <dimen name="card_frame_padding_sides">20dp</dimen>
+    <dimen name="card_frame_padding_bottom">30dp</dimen>
+
+    <!-- EditTexts -->
+    <dimen name="edit_text_padding_vertical">10dp</dimen>
+    <dimen name="edit_text_padding_sides">3dp</dimen>
+    <dimen name="edit_text_icon_spacing">33dp</dimen>
+
+    <!-- IconTextView -->
+    <dimen name="icon_txt_padding">5dp</dimen>
+    <dimen name="icon_form_margin_left">5dp</dimen>
+
+    <!-- Button -->
+    <dimen name="button_login_margin_top">20dp</dimen>
+
+    <!-- Other -->
+    <dimen name="form_layout_spacing_top">70dp</dimen>
+    <dimen name="form_layout_spacing_bottom">50dp</dimen>
+    <dimen name="form_reg_spacing_top">35dp</dimen>
+
+    <!-- Circle image views -->
+    <dimen name="circle_img_reg_profile">130dp</dimen>
+    <dimen name="circle_img_profile">100dp</dimen>
+
+    <dimen name="textbox_height">120dp</dimen>
+
+    <dimen name="color_button_width">100dp</dimen>
+    <dimen name="spinner_offset">-3.5dp</dimen>
+
+    <dimen name="cp_circle_radius">200dp</dimen>
+
+</resources>

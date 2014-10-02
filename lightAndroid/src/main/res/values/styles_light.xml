@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DrawerItemSimple">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minHeight">60dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/drawer_item_simple_padding</item>
+        <item name="android:paddingBottom">@dimen/drawer_item_simple_padding</item>
+        <item name="android:paddingRight">@dimen/drawer_item_simple_padding</item>
+        <item name="android:paddingLeft">@dimen/drawer_item_simple_padding_left</item>
+    </style>
+
+    <style name="DrawerItemSimpleIcon">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/drawer_item_simple_icon</item>
+        <item name="android:textColor">@color/drawer_item_simple_icon</item>
+        <item name="android:minWidth">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/drawer_item_simple_spacing</item>
+    </style>
+
+    <style name="DrawerItemSimpleLabel">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/drawer_item_simple_text</item>
+        <item name="android:textColor">@color/drawer_item_simple_label</item>
+    </style>
+
+    <style name="DrawerItemCategory">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/drawer_item_category_padding</item>
+    </style>
+
+    <style name="DrawerItemCategoryUnderscore">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/drawer_item_category_underscore</item>
+        <item name="android:layout_marginBottom">
+            @dimen/drawer_item_category_underscore_margin_bottom
+        </item>
+        <item name="android:layout_marginTop">@dimen/drawer_item_category_underscore_margin_top
+        </item>
+        <item name="android:background">@color/drawer_item_category_underscore</item>
+    </style>
+
+    <style name="DrawerItemCategoryLabel">
+        <item name="android:textSize">@dimen/drawer_item_category_label</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/drawer_item_category_underscore_margin_bottom</item>
+        <item name="android:paddingLeft">@dimen/drawer_item_category_underscore_margin_bottom</item>
+        <item name="android:paddingRight">@dimen/drawer_item_category_underscore_margin_bottom
+        </item>
+    </style>
+
+    <style name="ProfileLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/drawer_item_profile_label</item>
+    </style>
+
+    <style name="RlProfileContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingTop">@dimen/drawer_item_profile_spacing</item>
+        <item name="android:paddingBottom">@dimen/drawer_item_profile_spacing</item>
+    </style>
+</resources>
