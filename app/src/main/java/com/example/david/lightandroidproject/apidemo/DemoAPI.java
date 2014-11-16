@@ -1,6 +1,6 @@
 package com.example.david.lightandroidproject.apidemo;
 
-import com.dmacan.lightandroid.api.LightRequest;
+import com.dmacan.lightandroid.data.api.LightRequest;
 import com.example.david.lightandroidproject.datademo.User;
 
 import retrofit.Callback;

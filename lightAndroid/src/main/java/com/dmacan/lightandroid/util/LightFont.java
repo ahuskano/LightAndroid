@@ -17,7 +17,7 @@ import java.util.Map;
 public class LightFont {
 
     public static final String DEFAULT_FONT_DIR = "fonts/";
-    public static final String DEFAULT_FONT = "fontawesome.ttf";
+    public static final String DEFAULT_FONT = "material.ttf";
 
     private static Map<String, Typeface> fonts;
 

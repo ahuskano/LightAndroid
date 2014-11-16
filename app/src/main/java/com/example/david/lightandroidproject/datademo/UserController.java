@@ -1,19 +1,17 @@
 package com.example.david.lightandroidproject.datademo;
 
-import com.dmacan.lightandroid.api.LightRequest;
 import com.dmacan.lightandroid.data.LightController;
+import com.dmacan.lightandroid.data.api.LightRequest;
+import com.dmacan.lightandroid.event.LightDataResponseCallback;
 import com.dmacan.lightandroid.util.LightAPIUtil;
 import com.example.david.lightandroidproject.apidemo.DemoAPI;
-
-import retrofit.Callback;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
 
 /**
  * Created by David on 17.9.2014..
  */
 public class UserController extends LightController {
 
+    private LightDataResponseCallback<User> userCallback;
 
     /**
      * Napravi se request, dohvati se API i off you go :D
@@ -28,24 +26,10 @@ public class UserController extends LightController {
         u.setUsername(username);
         u.setPassword(password);
         readRequest.setData(u);
-        LightAPIUtil.getRestAdapter(DemoAPI.API_LOCATION).create(DemoAPI.class).readUser(readRequest, readUserCallback);
+        if (userCallback == null)
+            userCallback = new LightDataResponseCallback<User>(getOnDataResponseListener(), getOnErrorListener());
+        LightAPIUtil.getRestAdapter(DemoAPI.API_LOCATION).create(DemoAPI.class).readUser(readRequest, userCallback);
     }
 
 
-    /**
-     * Iz nekog razloga nije dozvoljeno downCastati retrofitov GSON response, pa moramo za svaki objekt raditi ovako callback. Naravno, vjerojatno postoji rješenje al nisam stigao istražiti pa ćemo ovako :D
-     */
-    private Callback<User> readUserCallback = new Callback<User>() {
-        @Override
-        public void success(User user, Response response) {
-         //   if (getOnDataReadListener() != null)
-                //getOnDataReadListener().onDataRead(user);
-        }
-
-        @Override
-        public void failure(RetrofitError error) {
-            if (getOnErrorListener() != null)
-                getOnErrorListener().onError(error);
-        }
-    };
 }

@@ -34,4 +34,6 @@ dependencies {
     compile('de.keyboardsurfer.android.widget:crouton:1.8.5@aar')
     // Butterknife
     compile 'com.jakewharton:butterknife:5.1.2'
+    // PagerSlidingTabStrip
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
 }

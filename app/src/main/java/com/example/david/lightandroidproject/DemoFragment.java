@@ -1,21 +1,25 @@
 package com.example.david.lightandroidproject;
 
 import android.widget.TextView;
+import android.widget.Toast;
 
-import com.dmacan.lightandroid.LightFragment;
-import com.dmacan.lightandroid.api.LightResponse;
-import com.dmacan.lightandroid.api.listener.OnDataReadListener;
-import com.dmacan.lightandroid.api.listener.OnErrorListener;
+import com.dmacan.lightandroid.data.api.listener.OnDataResponseListener;
+import com.dmacan.lightandroid.data.api.listener.OnErrorListener;
+import com.dmacan.lightandroid.navigation.fragment.LightFragment;
+import com.dmacan.lightandroid.type.LightData;
+import com.dmacan.lightandroid.type.property.Labeled;
+import com.example.david.lightandroidproject.datademo.User;
 import com.example.david.lightandroidproject.datademo.UserController;
 
 import butterknife.InjectView;
 import butterknife.OnClick;
 import retrofit.RetrofitError;
+import retrofit.client.Response;
 
 /**
  * Created by David on 17.9.2014..
  */
-public class DemoFragment extends LightFragment implements OnDataReadListener, OnErrorListener {
+public class DemoFragment extends LightFragment implements OnDataResponseListener, OnErrorListener, Labeled {
 
     /**
      * Predlažem da korisitmo Butterknife jer je puno jednostavnije
@@ -43,30 +47,26 @@ public class DemoFragment extends LightFragment implements OnDataReadListener, O
      */
     @OnClick(R.id.btnFindUser)
     void findUser() {
-        userController.readUser(etUsername.getText().toString(), etPassword.getText().toString());
-        userController.setOnDataReadListener(this); // naravno, ovo se mora postaviti ako se želi osluškivati response
+        Toast.makeText(getLightActivity(), "Klik", Toast.LENGTH_SHORT).show();
+        userController.setOnDataResponseListener(this); // naravno, ovo se mora postaviti ako se želi osluškivati response
         userController.setOnErrorListener(this);
+        userController.readUser(etUsername.getText().toString(), etPassword.getText().toString());
     }
 
-    /**
-     * Ova metoda dolazi s OnDataReadListener-om. Kada dođe success response od servera, ovo se poziva
-     * Ako je došlo do greške u response-u, odnosno RetrofitError, tada se zove onError metoda u OnError listeneru ako takva postoji
-     *
-     * @param data
-     */
-    @Override
-    public void onDataRead(LightResponse data) {
-      /*  User user = (User) data.ge;
-        if (user == null) // došlo je do pogreške jer api nije našao usera u bazi
-            getLightMessenger().showError("Ovo je error!");
-        else {
-            getLightMessenger().showSuccess(user.getEmail());
-        }*/
-    }
 
     @Override
     public void onError(RetrofitError error) {
-        getLightMessenger().showError("Došlo je do neke greške");
+        Toast.makeText(getActivity(), "Error: " + error.getMessage(), Toast.LENGTH_LONG).show();
     }
 
+    @Override
+    public String provideLabel() {
+        return "Demo";
+    }
+
+    @Override
+    public void onResponse(LightData response, Response retrofitResponse) {
+        User user = (User) response;
+        Toast.makeText(getActivity(), user.getUsername(), Toast.LENGTH_SHORT).show();
+    }
 }
