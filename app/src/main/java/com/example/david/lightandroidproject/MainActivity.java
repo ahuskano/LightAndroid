@@ -5,6 +5,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.dmacan.lightandroid.navigation.activity.LightActivity;
+import com.example.david.lightandroidproject.navigation.DemoDrawerActivity;
+import com.example.david.lightandroidproject.navigation.DemoDrawerMenuActivity;
+import com.example.david.lightandroidproject.navigation.DemoRecyclerActivity;
+import com.example.david.lightandroidproject.navigation.DemoStandardActivity;
+import com.example.david.lightandroidproject.navigation.DemoTabbedActivity;
 
 import butterknife.InjectView;
 import butterknife.OnItemClick;
@@ -14,7 +19,7 @@ import butterknife.OnItemClick;
  */
 public class MainActivity extends LightActivity {
 
-    String[] items = {"Standard activity", "Navigation drawer", "Tabs", "Navigation menu drawer"};
+    String[] items = {"Standard activity", "Navigation drawer", "Tabs", "Navigation menu drawer", "RecyclerView and CardView", "Network (REST)"};
     @InjectView(R.id.list)
     ListView list;
 
@@ -42,6 +47,12 @@ public class MainActivity extends LightActivity {
                 break;
             case 3:
                 startActivity(new Intent(getBaseContext(), DemoDrawerMenuActivity.class));
+                break;
+            case 4:
+                startActivity(new Intent(getBaseContext(), DemoRecyclerActivity.class));
+                break;
+            case 5:
+                startActivity(new Intent(getBaseContext(), DemoNetworkActivity.class));
         }
     }
 }

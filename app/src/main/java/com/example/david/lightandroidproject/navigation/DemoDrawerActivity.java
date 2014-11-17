@@ -1,10 +1,11 @@
-package com.example.david.lightandroidproject;
+package com.example.david.lightandroidproject.navigation;
 
 import android.os.Bundle;
 import android.view.View;
 
 import com.dmacan.lightandroid.navigation.activity.LightDrawerActivity;
 import com.dmacan.lightandroid.ui.drawer.DrawerSettings;
+import com.example.david.lightandroidproject.R;
 
 import net.simonvt.menudrawer.MenuDrawer;
 import net.simonvt.menudrawer.Position;

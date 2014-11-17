@@ -11,10 +11,13 @@ import retrofit.client.Response;
 /**
  * Created by David on 16.11.2014..
  */
-public class LightDataMultipleResponseCallback implements Callback<LightData[]> {
+public class LightDataMultipleResponseCallback<T> implements Callback<T> {
 
     private OnDataMultipleResponseListener onDataMultipleResponseListener;
     private OnErrorListener onErrorListener;
+
+    public LightDataMultipleResponseCallback() {
+    }
 
     public LightDataMultipleResponseCallback(OnDataMultipleResponseListener onDataMultipleResponseListener) {
         this.onDataMultipleResponseListener = onDataMultipleResponseListener;
@@ -42,7 +45,8 @@ public class LightDataMultipleResponseCallback implements Callback<LightData[]> 
     }
 
     @Override
-    public void success(LightData[] data, Response response) {
+    public void success(T t, Response response) {
+        LightData[] data = (LightData[]) t;
         if (onDataMultipleResponseListener != null)
             onDataMultipleResponseListener.onMultipleResponse(data, response);
     }

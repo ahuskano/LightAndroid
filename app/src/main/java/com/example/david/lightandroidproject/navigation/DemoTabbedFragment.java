@@ -1,17 +1,19 @@
-package com.example.david.lightandroidproject;
+package com.example.david.lightandroidproject.navigation;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 
 import com.astuetz.PagerSlidingTabStrip;
-import com.dmacan.lightandroid.navigation.activity.LightTabbedActivity;
+import com.dmacan.lightandroid.navigation.fragment.LightTabbedFragment;
+import com.example.david.lightandroidproject.R;
 
 import butterknife.InjectView;
 
 /**
  * Created by David on 16.11.2014..
  */
-public class DemoTabbedActivity extends LightTabbedActivity {
+public class DemoTabbedFragment extends LightTabbedFragment {
+
     @InjectView(R.id.pager)
     ViewPager pager;
     @InjectView(R.id.tabs)

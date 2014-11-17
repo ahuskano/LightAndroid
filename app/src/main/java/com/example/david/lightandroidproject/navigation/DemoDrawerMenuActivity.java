@@ -1,4 +1,4 @@
-package com.example.david.lightandroidproject;
+package com.example.david.lightandroidproject.navigation;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -7,8 +7,9 @@ import android.os.Bundle;
 import com.dmacan.lightandroid.navigation.activity.LightDrawerMenuActivity;
 import com.dmacan.lightandroid.ui.drawer.DrawerSettings;
 import com.dmacan.lightandroid.ui.presenter.LightAdapterItem;
-import com.example.david.lightandroidproject.typedemo.DrawerItem;
-import com.example.david.lightandroidproject.typedemo.TestFragment;
+import com.example.david.lightandroidproject.R;
+import com.example.david.lightandroidproject.type.DrawerItem;
+import com.example.david.lightandroidproject.type.TestFragment;
 
 import net.simonvt.menudrawer.MenuDrawer;
 import net.simonvt.menudrawer.Position;

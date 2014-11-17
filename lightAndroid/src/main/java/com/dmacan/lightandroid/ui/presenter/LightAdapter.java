@@ -24,9 +24,9 @@ public class LightAdapter extends BaseAdapter {
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
-    public LightAdapter(Context context, List<LightAdapterItem> items) {
+    public LightAdapter(Context context, List<? extends LightAdapterItem> items) {
         this.context = context;
-        this.items = items;
+        this.items = (List<LightAdapterItem>) items;
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -50,8 +50,8 @@ public class LightAdapter extends BaseAdapter {
         return items;
     }
 
-    public void setItems(List<LightAdapterItem> items) {
-        this.items = items;
+    public void setItems(List<? extends LightAdapterItem> items) {
+        this.items = (List<LightAdapterItem>) items;
     }
 
     public boolean addItem(LightAdapterItem item) {

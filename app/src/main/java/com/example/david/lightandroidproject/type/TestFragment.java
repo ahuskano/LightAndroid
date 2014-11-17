@@ -1,4 +1,4 @@
-package com.example.david.lightandroidproject.typedemo;
+package com.example.david.lightandroidproject.type;
 
 import android.widget.TextView;
 

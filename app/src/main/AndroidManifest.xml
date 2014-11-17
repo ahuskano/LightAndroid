@@ -19,10 +19,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".DemoStandardActivity" />
-        <activity android:name=".DemoDrawerActivity" />
-        <activity android:name=".DemoTabbedActivity" />
-        <activity android:name=".DemoDrawerMenuActivity" />
+        <activity android:name=".navigation.DemoStandardActivity" />
+        <activity android:name=".navigation.DemoDrawerActivity" />
+        <activity android:name=".navigation.DemoTabbedActivity" />
+        <activity android:name=".navigation.DemoDrawerMenuActivity" />
+        <activity android:name=".navigation.DemoRecyclerActivity" />
+        <activity android:name=".DemoNetworkActivity" />
     </application>
 
 </manifest>

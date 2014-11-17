@@ -1,6 +1,7 @@
-package com.example.david.lightandroidproject;
+package com.example.david.lightandroidproject.navigation;
 
 import com.dmacan.lightandroid.navigation.activity.LightActivity;
+import com.example.david.lightandroidproject.R;
 
 /**
  * Created by David on 16.11.2014..

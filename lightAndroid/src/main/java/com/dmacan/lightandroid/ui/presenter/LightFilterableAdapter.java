@@ -19,8 +19,8 @@ public class LightFilterableAdapter extends LightAdapter implements Filterable {
         this.filter = new LightFilter(this, true);
     }
 
-    public LightFilterableAdapter(Context context, List<LightAdapterItemFilterable> items) {
-        super(context, (List<LightAdapterItem>) (List<?>) items);
+    public LightFilterableAdapter(Context context, List<? extends LightAdapterItemFilterable> items) {
+        super(context, items);
         this.filter = new LightFilter(this, true);
     }
 

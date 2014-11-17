@@ -16,6 +16,9 @@ public class LightDataResponseCallback<T> implements Callback<T> {
     private OnDataResponseListener onDataResponseListener;
     private OnErrorListener onErrorListener;
 
+    public LightDataResponseCallback() {
+    }
+
     public LightDataResponseCallback(OnDataResponseListener onDataResponseListener) {
         this.onDataResponseListener = onDataResponseListener;
     }
