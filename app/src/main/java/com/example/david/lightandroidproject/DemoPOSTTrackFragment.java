@@ -4,13 +4,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.dmacan.lightandroid.data.api.listener.OnDataResponseListener;
-import com.dmacan.lightandroid.navigation.fragment.LightFragment;
-import com.dmacan.lightandroid.type.LightData;
-import com.dmacan.lightandroid.type.property.Labeled;
-import com.dmacan.lightandroid.util.LightFont;
 import com.example.david.lightandroidproject.data.controller.MusicianController;
 import com.example.david.lightandroidproject.data.model.Musician;
+import com.lightandroid.data.api.listener.OnDataResponseListener;
+import com.lightandroid.navigation.fragment.LightFragment;
+import com.lightandroid.type.LightData;
+import com.lightandroid.type.property.Labeled;
+import com.lightandroid.util.LightFont;
 
 import butterknife.InjectView;
 import butterknife.OnClick;

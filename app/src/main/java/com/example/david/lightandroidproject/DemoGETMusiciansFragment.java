@@ -2,15 +2,15 @@ package com.example.david.lightandroidproject;
 
 import android.widget.Toast;
 
-import com.dmacan.lightandroid.data.api.listener.OnDataMultipleResponseListener;
-import com.dmacan.lightandroid.data.api.listener.OnErrorListener;
-import com.dmacan.lightandroid.navigation.fragment.LightFragment;
-import com.dmacan.lightandroid.type.LightData;
-import com.dmacan.lightandroid.type.property.Labeled;
-import com.dmacan.lightandroid.ui.presenter.LightRecyclerViewAdapter;
 import com.example.david.lightandroidproject.data.controller.MusicianController;
 import com.example.david.lightandroidproject.data.model.Musician;
 import com.example.david.lightandroidproject.data.presenter.MusicianPresenter;
+import com.lightandroid.data.api.listener.OnDataMultipleResponseListener;
+import com.lightandroid.data.api.listener.OnErrorListener;
+import com.lightandroid.navigation.fragment.LightFragment;
+import com.lightandroid.type.LightData;
+import com.lightandroid.type.property.Labeled;
+import com.lightandroid.ui.presenter.LightRecyclerViewAdapter;
 
 import org.lucasr.twowayview.widget.TwoWayView;
 

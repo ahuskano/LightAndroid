@@ -3,8 +3,8 @@ package com.example.david.lightandroidproject.type;
 import android.view.View;
 import android.widget.TextView;
 
-import com.dmacan.lightandroid.ui.presenter.LightRecyclerPresenter;
 import com.example.david.lightandroidproject.R;
+import com.lightandroid.ui.presenter.LightRecyclerPresenter;
 
 /**
  * Created by David on 16.11.2014..

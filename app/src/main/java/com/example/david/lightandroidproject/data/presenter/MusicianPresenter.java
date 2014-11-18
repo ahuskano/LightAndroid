@@ -3,9 +3,9 @@ package com.example.david.lightandroidproject.data.presenter;
 import android.view.View;
 import android.widget.TextView;
 
-import com.dmacan.lightandroid.ui.presenter.LightRecyclerPresenter;
 import com.example.david.lightandroidproject.R;
 import com.example.david.lightandroidproject.data.model.Musician;
+import com.lightandroid.ui.presenter.LightRecyclerPresenter;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

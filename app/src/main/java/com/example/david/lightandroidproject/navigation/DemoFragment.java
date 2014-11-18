@@ -2,12 +2,12 @@ package com.example.david.lightandroidproject.navigation;
 
 import android.widget.Toast;
 
-import com.dmacan.lightandroid.data.api.listener.OnDataResponseListener;
-import com.dmacan.lightandroid.data.api.listener.OnErrorListener;
-import com.dmacan.lightandroid.navigation.fragment.LightFragment;
-import com.dmacan.lightandroid.type.LightData;
-import com.dmacan.lightandroid.type.property.Labeled;
 import com.example.david.lightandroidproject.R;
+import com.lightandroid.data.api.listener.OnDataResponseListener;
+import com.lightandroid.data.api.listener.OnErrorListener;
+import com.lightandroid.navigation.fragment.LightFragment;
+import com.lightandroid.type.LightData;
+import com.lightandroid.type.property.Labeled;
 
 import retrofit.RetrofitError;
 import retrofit.client.Response;

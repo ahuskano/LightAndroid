@@ -1,7 +1,7 @@
 package com.example.david.lightandroidproject.data.model;
 
-import com.dmacan.lightandroid.type.LightData;
 import com.google.gson.annotations.Expose;
+import com.lightandroid.type.LightData;
 
 /**
  * Created by David on 16.11.2014..

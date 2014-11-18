@@ -1,12 +1,12 @@
 package com.example.david.lightandroidproject.data.controller;
 
-import com.dmacan.lightandroid.data.LightController;
-import com.dmacan.lightandroid.event.LightDataMultipleResponseCallback;
-import com.dmacan.lightandroid.event.LightDataResponseCallback;
-import com.dmacan.lightandroid.util.LightAPIUtil;
 import com.example.david.lightandroidproject.data.api.DemoAPI;
 import com.example.david.lightandroidproject.data.model.Musician;
 import com.example.david.lightandroidproject.data.model.SearchRequest;
+import com.lightandroid.data.LightController;
+import com.lightandroid.event.LightDataMultipleResponseCallback;
+import com.lightandroid.event.LightDataResponseCallback;
+import com.lightandroid.util.LightAPIUtil;
 
 /**
  * Created by David on 16.11.2014..

@@ -4,12 +4,12 @@ import android.content.Intent;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.dmacan.lightandroid.navigation.activity.LightActivity;
 import com.example.david.lightandroidproject.navigation.DemoDrawerActivity;
 import com.example.david.lightandroidproject.navigation.DemoDrawerMenuActivity;
 import com.example.david.lightandroidproject.navigation.DemoRecyclerActivity;
 import com.example.david.lightandroidproject.navigation.DemoStandardActivity;
 import com.example.david.lightandroidproject.navigation.DemoTabbedActivity;
+import com.lightandroid.navigation.activity.LightActivity;
 
 import butterknife.InjectView;
 import butterknife.OnItemClick;

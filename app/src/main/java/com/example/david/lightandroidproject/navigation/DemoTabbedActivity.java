@@ -4,8 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 
 import com.astuetz.PagerSlidingTabStrip;
-import com.dmacan.lightandroid.navigation.activity.LightTabbedActivity;
 import com.example.david.lightandroidproject.R;
+import com.lightandroid.navigation.activity.LightTabbedActivity;
 
 import butterknife.InjectView;
 
