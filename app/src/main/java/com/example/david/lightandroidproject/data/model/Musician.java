@@ -14,6 +14,13 @@ public class Musician extends LightData {
     @Expose
     private String email;
 
+    public Musician() {
+    }
+
+    public Musician(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }

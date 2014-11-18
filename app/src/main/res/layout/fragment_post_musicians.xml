@@ -23,11 +23,14 @@
         android:layout_toLeftOf="@+id/btnSearch"
         android:hint="Write artist name (or part of it)" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvMusicians"
+    <TextView
+        android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/btnSearch" />
+        android:layout_below="@+id/etQuery"
+        android:gravity="center"
+        android:text="Result is: "
+        android:textSize="20sp" />
 
 </RelativeLayout>
