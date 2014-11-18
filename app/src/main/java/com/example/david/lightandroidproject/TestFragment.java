@@ -19,6 +19,7 @@ public class TestFragment extends LightFragment {
 
     @Override
     public void main() {
+        
         LayoutInflater inflater = (LayoutInflater) getLightActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View v = inflater.inflate(R.layout.crouton_test, null, false);
         Crouton.make(getLightActivity(), v, R.id.myViewGroup).show();
