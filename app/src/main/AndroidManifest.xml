@@ -3,6 +3,11 @@
     package="com.example.david.lightandroidproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -25,6 +30,9 @@
         <activity android:name=".navigation.DemoDrawerMenuActivity" />
         <activity android:name=".navigation.DemoRecyclerActivity" />
         <activity android:name=".DemoNetworkActivity" />
+        <activity
+            android:name=".CameraActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
     </application>
 
 </manifest>

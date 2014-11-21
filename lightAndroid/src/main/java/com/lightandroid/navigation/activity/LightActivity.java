@@ -1,6 +1,8 @@
 package com.lightandroid.navigation.activity;
 
+import android.annotation.TargetApi;
 import android.content.res.Configuration;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -38,6 +40,15 @@ public abstract class LightActivity extends FragmentActivity {
             this.currentFragment = fragment;
             this.fragmentContainer = container;
             getSupportFragmentManager().beginTransaction().replace(container, fragment).commit();
+        }
+    }
+
+
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
+    public void setupFragmentNoSupport(int container, android.app.Fragment fragment) {
+        if (this.savedInstanceState == null) {
+            this.fragmentContainer = container;
+            getFragmentManager().beginTransaction().replace(container, fragment).commit();
         }
     }
 
