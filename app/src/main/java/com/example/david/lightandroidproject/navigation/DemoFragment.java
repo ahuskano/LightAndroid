@@ -1,16 +1,14 @@
 package com.example.david.lightandroidproject.navigation;
 
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dmacan.lightandroid.data.api.listener.OnDataResponseListener;
-import com.dmacan.lightandroid.data.api.listener.OnErrorListener;
-import com.dmacan.lightandroid.navigation.fragment.LightFragment;
-import com.dmacan.lightandroid.type.LightData;
-import com.dmacan.lightandroid.type.property.Labeled;
 import com.example.david.lightandroidproject.R;
+import com.lightandroid.data.api.listener.OnDataResponseListener;
+import com.lightandroid.data.api.listener.OnErrorListener;
+import com.lightandroid.navigation.fragment.LightFragment;
+import com.lightandroid.type.LightData;
+import com.lightandroid.type.property.Labeled;
 
-import butterknife.InjectView;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
 
@@ -19,14 +17,9 @@ import retrofit.client.Response;
  */
 public class DemoFragment extends LightFragment implements OnDataResponseListener, OnErrorListener, Labeled {
 
-    @InjectView(R.id.etUsername)
-    TextView etUsername;
-    @InjectView(R.id.etPassword)
-    TextView etPassword;
-
     @Override
     public int provideLayoutRes() {
-        return R.layout.fragment_demo;
+        return R.layout.layout_recycler;
     }
 
     @Override

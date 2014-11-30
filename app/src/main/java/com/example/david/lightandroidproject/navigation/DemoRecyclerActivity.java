@@ -4,10 +4,10 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.dmacan.lightandroid.navigation.activity.LightActivity;
-import com.dmacan.lightandroid.ui.presenter.LightRecyclerViewAdapter;
 import com.example.david.lightandroidproject.R;
 import com.example.david.lightandroidproject.type.RecyclerItem;
+import com.lightandroid.navigation.activity.LightActivity;
+import com.lightandroid.ui.presenter.LightRecyclerViewAdapter;
 
 import butterknife.InjectView;
 

@@ -2,8 +2,8 @@ package com.example.david.lightandroidproject.type;
 
 import android.widget.TextView;
 
-import com.dmacan.lightandroid.navigation.fragment.LightFragment;
 import com.example.david.lightandroidproject.R;
+import com.lightandroid.navigation.fragment.LightFragment;
 
 import butterknife.InjectView;
 

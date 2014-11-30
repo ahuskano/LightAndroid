@@ -4,12 +4,12 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
-import com.dmacan.lightandroid.navigation.activity.LightDrawerMenuActivity;
-import com.dmacan.lightandroid.ui.drawer.DrawerSettings;
-import com.dmacan.lightandroid.ui.presenter.LightAdapterItem;
 import com.example.david.lightandroidproject.R;
 import com.example.david.lightandroidproject.type.DrawerItem;
 import com.example.david.lightandroidproject.type.TestFragment;
+import com.lightandroid.navigation.activity.LightDrawerMenuActivity;
+import com.lightandroid.ui.drawer.DrawerSettings;
+import com.lightandroid.ui.presenter.LightAdapterItem;
 
 import net.simonvt.menudrawer.MenuDrawer;
 import net.simonvt.menudrawer.Position;
