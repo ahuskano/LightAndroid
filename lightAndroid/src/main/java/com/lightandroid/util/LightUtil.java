@@ -40,4 +40,12 @@ public class LightUtil {
         return safeUppercase(targeted).startsWith(safeUppercase(requested));
     }
 
+    public static int castLongToIntSafe(long value) {
+        try {
+            return (int) value;
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
 }
