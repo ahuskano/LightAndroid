@@ -21,9 +21,11 @@ public abstract class LightFragment extends Fragment {
 
     private Menu menu;
     private Activity parentActivity;
+    private ViewGroup container;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        this.container = container;
         this.setHasOptionsMenu(true);
         View view = inflater.inflate(provideLayoutRes(), container, false);
         ButterKnife.inject(this, view);
@@ -79,4 +81,7 @@ public abstract class LightFragment extends Fragment {
         supplyMenuIcons(iconDrawables);
     }
 
+    public ViewGroup getContainer() {
+        return container;
+    }
 }

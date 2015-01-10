@@ -1,7 +1,9 @@
 package com.lightandroid.ui.presenter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,13 +35,12 @@ public class LightRecyclerViewAdapter extends RecyclerView.Adapter<LightViewHold
     @Override
     public LightViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
 //        LightRecyclerPresenter presenter = lightRecyclerPresenters.get(0);
-        View v = LayoutInflater.from(context).inflate(layoutRes, viewGroup, false);
-        return new LightViewHolder(v);
+        View v = LayoutInflater.from(context).inflate(layoutRes, null, false);
+        return new LightViewHolder(lightRecyclerPresenters.get(i), v);
     }
 
     @Override
     public void onBindViewHolder(LightViewHolder lightViewHolder, int i) {
-        lightViewHolder.setPresenter(lightRecyclerPresenters.get(i));
         lightViewHolder.getPresenter().display(lightViewHolder.itemView, i);
         lightViewHolder.setPosition(i);
         if (this.onLightItemClickListener != null)
